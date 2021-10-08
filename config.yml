@@ -1,0 +1,16 @@
+title: '[Síntese Learn]  Projeto Teste'
+description: 'Projeto de teste para entender o funcionamento do GitHub Learning lab. '
+template:
+  repo: sintese-learn-projeto-teste-template
+  name: sintese-learn-projeto-teste
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
